@@ -1,24 +1,26 @@
-# Animation Landing (React + Vite)
+# Animation Landing
 
-A React landing page with animated navigation, hero, sticky logo scroll section, and footer.
+Single-page React app built with Vite.  
+Includes animated navbar/dropdowns, hero section, sticky logo animation, and footer.
 
-## Run
+## Quick Start
 
 ```bash
 npm install
 npm run dev
 ```
 
-## Build
+## Scripts
 
 ```bash
-npm run build
-npm run preview
+npm run dev      # start local dev server
+npm run build    # create production build
+npm run preview  # preview production build
 ```
 
-## Structure
+## Project Structure
 
-- `src/components/layout` - top nav and footer
-- `src/components/sections` - hero and page sections
-- `src/styles/components` - section/component CSS
-- `src/assets` - images and SVGs
+- `src/components/layout` - layout components (`Animation`, `Footer`)
+- `src/components/sections` - page sections (`WhiteHero`, `StickyScrollBoxes`)
+- `src/styles/components` - component-level CSS
+- `src/assets` - images, icons, and graphics
