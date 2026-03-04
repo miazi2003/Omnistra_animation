@@ -1,0 +1,163 @@
+
+.hover-div {
+  --cta-bg: #1d4ed8;
+  --cta-fg: #ffffff;
+  --cta-hover-fg: #dbeafe;
+  width: 280px;
+  height: 48px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+ 
+  border-radius: 12px;
+  background: var(--cta-bg);
+  overflow: hidden;
+  box-shadow: 0 10px 24px rgba(2, 6, 23, 0.45);
+  transition: transform 0.28s cubic-bezier(0.22, 1, 0.36, 1),
+    box-shadow 0.28s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.hover-div::before {
+  content: "";
+  position: absolute;
+  right: 9px;
+  top: 50%;
+  width: 12px;
+  height: 12px;
+  transform: translateY(-50%);
+  border-radius: 999px;
+  background: #dbeafe;
+  transition: width 0.38s cubic-bezier(0.22, 1, 0.36, 1),
+    height 0.38s cubic-bezier(0.22, 1, 0.36, 1),
+    top 0.38s cubic-bezier(0.22, 1, 0.36, 1),
+    right 0.38s cubic-bezier(0.22, 1, 0.36, 1),
+    transform 0.38s cubic-bezier(0.22, 1, 0.36, 1),
+    border-radius 0.3s ease;
+}
+
+.hover-div:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 14px 34px rgba(2, 6, 23, 0.6);
+}
+
+.hover-div:hover::before {
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  transform: none;
+  border-radius: 12px;
+}
+
+.hover-div:active {
+  transform: translateY(0);
+}
+
+.hover-div:focus-within {
+  outline: 2px solid rgba(37, 99, 235, 0.55);
+  outline-offset: 2px;
+}
+
+.hover-btn {
+  position: relative;
+  z-index: 2;
+  flex: 1;
+  height: 100%;
+  border: 0;
+  background: transparent;
+  color: var(--cta-fg);
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.btn-text {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-right: 34px;
+  transition: transform 0.34s cubic-bezier(0.22, 1, 0.36, 1),
+    color 0.34s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.btn-text-primary {
+  transform: translateY(0);
+  color: var(--cta-fg);
+  padding-left :20px
+}
+
+.btn-text-secondary {
+  transform: translateY(110%);
+  color: var(--cta-hover-fg);
+    padding-left :20px
+}
+
+.hover-div:hover .btn-text-primary {
+  transform: translateY(-110%);
+}
+
+.hover-div:hover .btn-text-secondary {
+  transform: translateY(0);
+}
+
+.round-icon {
+  position: relative;
+  z-index: 2;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background: transparent;
+  color: #0b1220;
+  flex-shrink: 0;
+  transition: transform 0.34s cubic-bezier(0.22, 1, 0.36, 1),
+    background-color 0.34s ease, color 0.34s ease;
+}
+
+.hover-div:hover .round-icon {
+  transform: translateX(-1px) scale(1.06);
+  color: #1d4ed8;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hover-div,
+  .hover-div::before,
+  .btn-text,
+  .round-icon {
+    transition: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .hover-div {
+    width: 220px;
+    height: 40px;
+    border-radius: 10px;
+  }
+
+  .hover-div::before {
+    right: 8px;
+    width: 10px;
+    height: 10px;
+  }
+
+  .hover-btn {
+    font-size: 14px;
+  }
+
+  .btn-text {
+    padding-right: 28px;
+  }
+
+  .round-icon {
+    width: 24px;
+    height: 24px;
+  }
+}
+

@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="758" height="237" viewBox="0 0 758 237" fill="none">
+  <defs>
+    <linearGradient id="g1" x1="0" y1="118.5" x2="758" y2="118.5" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#97A3B6" stop-opacity="0" />
+      <stop offset="0.5" stop-color="#97A3B6" stop-opacity="0.5" />
+      <stop offset="1" stop-color="#97A3B6" stop-opacity="0" />
+    </linearGradient>
+  </defs>
+
+  <rect width="758" height="237" rx="14" fill="none" />
+
+  <path d="M0 58C120 96 638 96 758 58" stroke="url(#g1)" stroke-width="0.9" stroke-dasharray="2 2" />
+  <path d="M0 178C120 140 638 140 758 178" stroke="url(#g1)" stroke-width="0.9" stroke-dasharray="2 2" />
+  <path d="M90 26C180 78 578 78 668 26" stroke="url(#g1)" stroke-width="0.9" stroke-dasharray="2 2" />
+  <path d="M90 211C180 159 578 159 668 211" stroke="url(#g1)" stroke-width="0.9" stroke-dasharray="2 2" />
+
+  <circle cx="379" cy="118.5" r="72" fill="#1A2480" />
+  <circle cx="379" cy="118.5" r="54" fill="#2330AA" />
+  <circle cx="379" cy="118.5" r="40" fill="#3448FF" />
+
+  <g fill="#F6F8FA">
+    <circle cx="104" cy="80" r="13" />
+    <circle cx="165" cy="128" r="11" />
+    <circle cx="225" cy="170" r="14" />
+    <circle cx="282" cy="96" r="8" />
+    <circle cx="316" cy="132" r="9" />
+    <circle cx="507" cy="104" r="9" />
+    <circle cx="547" cy="140" r="8" />
+    <circle cx="598" cy="84" r="11" />
+    <circle cx="646" cy="132" r="10" />
+    <circle cx="700" cy="112" r="15" />
+  </g>
+</svg>

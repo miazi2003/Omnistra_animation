@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800" fill="none">
+  <rect width="1200" height="800" rx="24" fill="#0B0F16"/>
+  <rect x="40" y="40" width="1120" height="720" rx="20" stroke="#2B3342" stroke-dasharray="8 8"/>
+  <text x="600" y="390" text-anchor="middle" fill="#97A3B6" font-size="42" font-family="Arial, sans-serif">Replace me</text>
+</svg>
